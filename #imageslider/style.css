@@ -1,0 +1,45 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider img {
+  width: 100%;
+  height: 1000px;
+  display: none;
+}
+img.displaySlide {
+  display: block;
+animation-name: fade;
+animation-duration: 2s;
+}
+.slider button {
+  position: absolute; /*relative to its parent which is the slider*/
+  top: 50%;
+  transform: translateY(
+    -50%
+  ); /*remember this is done relative to the pictures height*/
+  font-size: 2rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+.previous {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,25 @@
+86
+
+Normally, arrays allocate a contiguous block of memory of fixed length. However, in Javascript, arrays are Object types with special constructors and accessor methods.
+
+Which means, a statement like:
+
+var arr = new Array(100000);
+
+does not allocate any memory! In fact, it simply sets the value of the length property in the array. When you construct an array, you don't need to declare a size as they grow automatically. So, you should use this instead:
+
+var arr = [];
+
+Arrays in Javascript are sparse which means not all the elements in the array may contain data. In other words, only the elements that actually contain data exist in the array. This reduces the amount of memory used by the array. The values are located by a key and not by an offset. They're simply a method of convenience and not intended to be used for complex numerical analysis.
+
+Arrays in Javascript are not typed so the value of an element can be an object, string, number, boolean, function or an array. The main difference between an array and an object is the length property which has a value greater than the largest integer key in the array.
+
+For example:
+
+You could have an create an empty array and add two elements at index 0 and index 99. The length would be 100, but the number of elements in the array would be 2.
+
+var arr = [];
+arr[0] = 0;
+arr[99] = {name: "John"};
+console.log(arr.length); // prints 100
+arr; // prints something like [0, undefined × 98, Object { name: "John"}]

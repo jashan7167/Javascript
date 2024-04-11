@@ -1,0 +1,11 @@
+const element = document.getElementById('myElement');
+
+console.log(element.textContent); // Returns all text content, including nested elements
+console.log(element.innerHTML); // Returns HTML content, including nested elements
+console.log(element.innerText); // Returns visible text content, excluding nested elements
+
+
+
+
+
+//see event bubbling from the steven colden course

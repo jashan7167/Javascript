@@ -1,0 +1,2 @@
+we learnt about the .toFixed() for precision usage purposes
+

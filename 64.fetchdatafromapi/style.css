@@ -1,0 +1,18 @@
+.con {
+  text-align: center;
+}
+#pokesearch {
+  margin-right: 10px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#pokebtn {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: salmon;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 40px;
+}

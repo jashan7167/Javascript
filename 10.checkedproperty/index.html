@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--if for attribute same as the id then if we click on the label it will still select the checkbo giving the same name allows us to group all these buttons together so we can select only one-->
+    <div class="outside">
+      <div id="checkbox">
+        <input type="checkbox" name="" id="myCheckBox" />
+        <label for="myCheckBox">Subscribe</label>
+      </div>
+      <div class="inside">
+        <div>
+          <input type="radio" name="card" id="visaBtn" />
+          <label for="visaBtn">Visa</label>
+        </div>
+        <div>
+          <input type="radio" name="card" id="masterCardBtn" />
+          <label for="masterCardBtn">Master Card</label>
+        </div>
+        <div>
+          <input type="radio" name="card" id="paypalBtn" />
+          <label for="visaBtn">Paypal</label>
+        </div>
+
+        <button type="submit" id="mySubmit">Submit</button>
+      </div>
+      <p id="subResult"></p>
+      <p id="paymentResult"></p>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+body
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+#mybutton
+{
+  font-size: 3em;
+  padding:5px 25px;
+  border-radius: 5px;
+  background-color: hsl(120,100%,0.4);
+  color: white;
+  box-sizing: border-box;
+  border: 2px solid black;
+  box-shadow: 15px 10px 2px cyan;
+  display: block; /*can also be done by br tag*/
+}
+
+#mybutton:hover
+{
+  cursor: pointer;
+  color: black;
+  box-shadow: 15px 10px 2px yellow;
+}
+
+.myLabels
+{
+  font-size: 3em;
+  color: blue;
+  display: block;
+  
+
+}
+
+
+

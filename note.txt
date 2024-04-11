@@ -1,0 +1,5 @@
+topics we talked about here:
+1.background-cover
+2.backdropfilter
+3.margins work on the outside always remember and padding work on the inside always remember
+
